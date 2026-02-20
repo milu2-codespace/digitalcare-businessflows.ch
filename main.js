@@ -1,4 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
+  // Set current year in copyright
+  const yearElement = document.getElementById('year');
+  if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+  }
+  
   const accordionHeaders = document.querySelectorAll('.accordion-header');
   
   accordionHeaders.forEach(header => {
